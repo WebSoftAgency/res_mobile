@@ -1,0 +1,19 @@
+<ion-view>
+  <ion-content class="has-header padding">
+
+    <ul class="list">
+      <li class="item item-toggle">
+          Push notification
+          <label class="toggle toggle-positive">
+            <input type="checkbox" ng-disabled="disabled" ng-model="push_enabled" ng-change="on_off_push(push_enabled)">
+            <div class="track">
+              <div class="handle"></div>
+            </div>
+          </label>
+      </li>
+    </ul>
+
+    <button class="button" ng-click="test_api()">Test api</button>
+
+  </ion-content>
+</ion-view>

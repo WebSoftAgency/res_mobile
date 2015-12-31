@@ -1,0 +1,27 @@
+{
+  "name": "test_cordova_notification",
+  "version": "0.1.0",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-sequence": "^0.4.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "html-loader": "^0.3.0",
+    "jsdoc": "^3.4.0",
+    "require-dir": "^0.3.0",
+    "webpack": "^1.12.8"
+  },
+  "cordovaPlugins": [
+
+  ],
+  "cordovaPlatforms": []
+}
