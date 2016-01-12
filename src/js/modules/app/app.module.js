@@ -108,6 +108,7 @@ function cordovaPushConfig(localStorageService, $ionicPlatform, $http, $cordovaP
         return $cordovaPush.register()
       })
       .then(token_device => {
+        console.log(token_device);
         var request_options = {
           method: 'POST',
           url: app_settings['base_url'] + '/api/notifications/device/gcm/',
