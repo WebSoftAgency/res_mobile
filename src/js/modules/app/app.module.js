@@ -20,8 +20,9 @@ var ngApp = angular.module('ngApp', module_dependencies);
 
 ngApp
   .constant('app_settings', {
-    //'base_url': 'http://127.0.0.1:8000'
-    base_url : 'https://infinite-headland-8695.herokuapp.com'
+    //base_url: 'http://127.0.0.1:8000'
+    //base_url : 'https://infinite-headland-8695.herokuapp.com'
+    base_url : 'http://c0067a14.ngrok.io'
   })
 
 /**
