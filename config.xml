@@ -1,5 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.example.hello" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.example.sorfaltest" version="0.0.1"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:gap="http://phonegap.com/ns/1.0"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
     <name>cordova push notifications</name>
     <description>
         A sample cordova push notifications app.
@@ -9,10 +13,29 @@
     </author>
     <content src="index.html" />
 
-    <plugin name="cordova-plugin-whitelist" />
+    <platform name="android|ios" />
+    <preference name="phonegap-version" value="cli-5.2.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+
+    <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.InAppBrowser" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
+
+    <platform name="android">
+      <plugin name="com.indigoway.cordova.whitelist.whitelistplugin" source="pgb" spec="1.1.1" />
+    </platform>
 
     <access origin="*" />
-
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
